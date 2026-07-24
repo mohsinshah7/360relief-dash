@@ -1,8 +1,8 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>360 Relief — Dashboard</title></head>
 <body style="font-family:-apple-system,'Segoe UI',sans-serif;background:#edf4fb;margin:0"><div id="s" style="text-align:center;padding-top:42vh;color:#2f6a7c;font-weight:600">Loading dashboard… <span id="p"></span></div>
 <script>
-(async()=>{const n=20;let html='';
- try{for(let i=0;i<n;i++){const r=await fetch('parts/p'+i+'.txt?v=1784888520');if(!r.ok)throw 0;html+=await r.text();document.getElementById('p').textContent=Math.round((i+1)/n*100)+'%';}}
+(async()=>{const n=18;let html='';
+ try{for(let i=0;i<n;i++){const r=await fetch('parts/p'+i+'.txt?v=1784893621');if(!r.ok)throw 0;html+=await r.text();document.getElementById('p').textContent=Math.round((i+1)/n*100)+'%';}}
  catch(e){document.getElementById('s').textContent='Load failed — please refresh';return;}
  document.open();document.write(html);document.close();})();
 </script></body></html>
